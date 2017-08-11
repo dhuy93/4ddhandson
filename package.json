@@ -24,7 +24,8 @@
     "gulp-stylint": "^4.0.0",
     "gulp-stylus": "^2.6.0",
     "gulp-util": "^3.0.8",
-    "nib": "^1.1.2"
+    "nib": "^1.1.2",
+    "reset.css": "^2.0.2"
   },
   "directories": {
     "doc": "docs"

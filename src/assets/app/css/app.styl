@@ -8,6 +8,7 @@ html
 
 heading-defaut()
   margin: auto 20px
+  padding: 0 10px
   text-align: center
   max-width: 100%
   font-family: Poppins
@@ -24,9 +25,25 @@ heading-defaut()
   heading-defaut()
   font-size: 24px
   font-weight: 500
-  line-height: (48/24)
+  line-height: 1
+  border: solid #a09880
+  border-width: 0 0 0 5px
+
+.a-heading--md::before
+  color: red
+
 
 .full-width
   width: 100vw
   position: relative
   display: block
+
+.row
+  display: flex
+  flex-flow: row wrap
+
+ul.row
+  list-style-type: none
+
+.col-lg-2
+  flex-basis: (2/12)
