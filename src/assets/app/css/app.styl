@@ -1,19 +1,22 @@
 html
+  font-family: Poppins
   body
-    background-color: #adadad
+    background-color: #f8f8f8
     margin: auto
     article
       background-color: white
       margin: auto 50px
 
+.card
+  margin: auto 83px
+
 heading-defaut()
-  margin: auto 20px
-  padding: 0 10px
+  margin: 33px 0
   text-align: center
   max-width: 100%
-  font-family: Poppins
   text-transform: uppercase
   color: #303840
+  display inline-block
 
 .a-heading--lg
   heading-defaut()
@@ -21,17 +24,21 @@ heading-defaut()
   font-weight: 500
   line-height: (56/40)
 
-.a-heading--md
+.a-heading--md--border
   heading-defaut()
+  margin: 33px 27px
+  padding: 0 15px
   font-size: 24px
   font-weight: 500
   line-height: 1
   border: solid #a09880
   border-width: 0 0 0 5px
 
-.a-heading--md::before
-  color: red
-
+.a-heading--md
+  heading-defaut()
+  font-size: 24px
+  font-weight: 500
+  line-height: 1
 
 .full-width
   width: 100vw
@@ -46,4 +53,65 @@ ul.row
   list-style-type: none
 
 .col-lg-2
-  flex-basis: (2/12)
+  flex-basis: ((2/12)*100)%
+  .a-caption
+    display: block
+    font-size: 12px
+    font-weight: 600
+
+.col-lg-3
+  flex-basis: ((3/12)*100)%
+
+.item
+  width: 100%
+  text-align: center
+
+.a-caption
+  color: #303840
+  text-decoration: none
+  &:hover
+    color: #00a8e8
+
+.m-alphabet-section
+  background-color: #f8f8f8
+  margin: auto 27px
+  padding: 24px
+
+.m-pagination
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  padding: 0
+
+ul.m-pagination
+  list-style-type: none
+
+
+.a-page-index
+  display: inline-block
+  background-color: #ffffff
+  color: #303840
+  text-decoration: none
+  width: (28/16)em
+  padding: 9px
+  margin: 5.5px
+  font-weight: 600
+  font-size: 16px
+  border-radius: 6px
+  text-align: center
+  &:hover
+    background-color: #384450
+    color: #ffffff
+    
+.a-alphabet-category
+  font-weight: 500
+  font-size: 16px
+  text-decoration: none
+  color: #303840
+  &:hover
+    color: #00a8e8
+
+.a-divider
+  color: #f0f0f0
+  size: 2px
+  width: 100%
